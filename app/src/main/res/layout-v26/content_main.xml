@@ -12,18 +12,20 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nameoffood"
         android:layout_width="93dp"
         android:layout_height="33dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="13dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/addfoodname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
         tools:text="Chinese" />
 
     <TextView
-        android:id="@+id/heading"
+        android:id="@+id/dinnerdecide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -35,17 +37,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
         android:layout_width="186dp"
         android:layout_height="196dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="44dp"
         android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/nameoffood"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/dinnerdecide"
         app:srcCompat="@drawable/dd_logo" />
 
     <Button
@@ -54,7 +56,9 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="59dp"
-        android:layout_marginEnd="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="68dp"
         android:backgroundTint="#4CAF50"
         android:text="@string/decide"
         android:visibility="visible"
@@ -62,28 +66,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AddFoodButton"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintTop_toBottomOf="@+id/foodbutton"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/AddFoodButton"
+        android:id="@+id/foodbutton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="37dp"
         android:backgroundTint="#597E8D"
         android:text="@string/add_food"
-        app:layout_constraintBottom_toTopOf="@+id/Decide button"
+        app:layout_constraintBottom_toTopOf="@id/addfoodname"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Add food" />
+        app:layout_constraintTop_toBottomOf="@+id/addfoodname" />
 
     <EditText
-        android:id="@+id/Add food"
+        android:id="@+id/addfoodname"
         android:layout_width="168dp"
         android:layout_height="46dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="48dp"
         android:autofillHints=""
         android:backgroundTint="#0F0B0B"
         android:ems="10"
@@ -92,10 +101,11 @@
         android:text="@string/name"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/AddFoodButton"
+        app:layout_constraintBottom_toTopOf="@+id/foodbutton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/nameoffood"
         tools:text="         Add Food Name"
         tools:visibility="visible" />
 
