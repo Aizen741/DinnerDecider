@@ -81,16 +81,22 @@
 
     <EditText
         android:id="@+id/Add food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="168dp"
+        android:layout_height="46dp"
         android:layout_marginTop="36dp"
         android:autofillHints=""
+        android:backgroundTint="#0F0B0B"
         android:ems="10"
+        android:hint="@string/add_food"
         android:inputType="textPersonName"
         android:text="@string/name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/AddFoodButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="         Add Food Name"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
