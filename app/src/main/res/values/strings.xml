@@ -3,4 +3,8 @@
     <string name="action_settings">Settings</string>
     <string name="dinner_decider">Dinner Decider</string>
     <string name="todo">TODO</string>
+    <string name="decide">DECIDE!</string>
+    <string name="add_food">Add Food</string>
+    <string name="name">Name</string>
+    <string name="todo">TODO</string>
 </resources>
